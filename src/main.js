@@ -1,5 +1,5 @@
 export const search = () => {
-  
+  fetch('https://www.spotify.com');
 }
 export const searchAlbums = () => {
   
