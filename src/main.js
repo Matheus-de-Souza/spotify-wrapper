@@ -1,7 +1,9 @@
 /* global fetch */
 
+import { HEADERS } from './config';
+
 export const search = (query, type) =>
-  fetch(`https://api.spotify.com/v1/search?q=${query}&type=${type}`)
+  fetch(`https://api.spotify.com/v1/search?q=${query}&type=${type}`, HEADERS)
     .then(data => data.json());
 
 export const searchAlbums = query =>
