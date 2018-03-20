@@ -88,7 +88,7 @@ describe('Album', () => {
     it('should return the correct data from Promise', () => {
       promise.resolves([{ album: 'name' }, { album: 'name2' }]);
 
-      const album = getAlbum('4nO7EUWCOzqHK3iGDXDzzU');
+      const album = getAlbums('4nO7EUWCOzqHK3iGDXDzzU');
       expect(album.resolveValue).to.be.eql([{ album: 'name' }, { album: 'name2' }]);
     });
   });
