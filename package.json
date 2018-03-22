@@ -4,6 +4,9 @@
   "description": "This project was created to test TDD Frameworks and tools",
   "main": "src/index.js",
   "scripts": {
+    "build:clear": "rimraf ./lib",
+    "build": "npm run build:clear && \"node_modules/.bin/babel\" --out-dir lib src",
+    "build:watch": "npm run build -- --watch",
     "lint": "node_modules/.bin/eslint src/**/*.js",
     "prepush": "npm run lint && npm run test:coverage",
     "test": "cross-env NODE_ENV=test nyc node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
@@ -41,6 +44,7 @@
     "node-fetch": "^2.1.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-plugin-istanbul": "^4.1.5",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
@@ -54,6 +58,7 @@
     "eslint-plugin-react": "^7.4.0",
     "mocha": "^5.0.4",
     "nyc": "^11.4.1",
+    "rimraf": "^2.6.2",
     "sinon": "^4.4.6",
     "sinon-chai": "^3.0.0",
     "sinon-stub-promise": "^4.0.0"
