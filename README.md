@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/Matheus-de-Souza/spotify-wrapper.svg?branch=master)](https://travis-ci.org/Matheus-de-Souza/spotify-wrapper)
 
+[![Coverage Status](https://coveralls.io/repos/github/Matheus-de-Souza/spotify-wrapper/badge.svg?branch=master)](https://coveralls.io/github/Matheus-de-Souza/spotify-wrapper?branch=master)
+
 A wrapper to work with the [Spotify Web API](https://developer.spotify.com/web-api/).
 
 ## Browser Support
