@@ -1,11 +1,11 @@
 {
-  "name": "spotify-wrapper",
-  "version": "1.0.0",
+  "name": "mws-spotify-wrapper",
+  "version": "1.0.4",
   "description": "This project was created to test TDD Frameworks and tools",
   "main": "lib/index.js",
   "files" :[
-    "dist",
-    "lib"
+    "dist/",
+    "lib/"
   ],
   "scripts": {
     "build:clear": "rimraf ./lib",
